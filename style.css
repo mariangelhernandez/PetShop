@@ -70,4 +70,80 @@ opacity: 0.7;
     object-fit: cover;
 }
 
+.servicos{
+    width: 100;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    margin: 40px 0;
+    padding: 0 30px;
+}
 
+.item-servicos{
+    width: 22%;
+   
+}
+
+.item-servicos img{
+    width: 100%;
+    height: 270px;
+    object-fit: cover;
+}
+.item-servicos h2{
+   background-color: #000000; 
+   color: #ffffff;
+   margin: 0;
+   text-align: center;
+   font-family: sans-serif;
+   margin-top: -5px;
+   padding: 5px 0;
+}
+
+.publicidade{
+    width: 100%;
+    background-color: #ddd;
+}
+
+.publicidade h1{
+    text-align: left;
+    font-size: 40px;
+   text-transform: uppercase;
+   max-width: 600px;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+.cliente-texto h1 {
+    text-align: left;
+    font-size: 40px;
+   text-transform: uppe h1
+   max-width: 600px;
+   margin-left: auto;
+   margin-right: auto;
+   font-size: 30px;
+}
+
+.cliente{
+    
+    display: flex;
+    justify-content: sp h1
+ 
+    
+}
+
+.cliente-img img{
+    width: 100%;
+
+}
+.imagem-final{
+    width: 100%;
+    height: auto;
+}
+
+.contato{
+    font-size: medium;
+}
+.contato h1{
+    font-size: larger;
+}
+    

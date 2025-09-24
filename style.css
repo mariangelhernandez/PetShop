@@ -116,7 +116,6 @@ opacity: 0.7;
 .cliente-texto h1 {
     text-align: left;
     font-size: 40px;
-   text-transform: uppe h1
    max-width: 600px;
    margin-left: auto;
    margin-right: auto;
@@ -138,12 +137,43 @@ opacity: 0.7;
 .imagem-final{
     width: 100%;
     height: auto;
+    display: flex;
+  
+}
+.imagem{
+width: 50%;
+
 }
 
 .contato{
-    font-size: medium;
+    width: 50%;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+    background-color: rgb(191, 212, 3)
+    
 }
-.contato h1{
-    font-size: larger;
+
+ .contato h1{
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 20px;
+
 }
+
+.contato p{
+    font-size: 30px;
+    font-weight: bold;
+}   
+
+.fale-conosco{
+    background-color: #333;
+    color: #fff;
+    width: 100%;
+    height: auto;
+    padding: 40px 0;
+}
+
+
     

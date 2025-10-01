@@ -1,41 +1,47 @@
-header{
+* {
+    font-size: 15px;
+    font-family: sans-serif;
+    margin: 0%;
+}
+
+header {
     background-color: #ddd;
     width: 100%;
     height: auto;
 }
 
-.topo{
-     width: 80%;
-     height: auto;
-     margin: auto;
-     display: flex;
-     justify-content: space-between;
-     align-items: center;
+.topo {
+    width: 80%;
+    height: auto;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
 }
 
-.logo{
+.logo {
     width: fit-content;
     height: auto;
 
 }
 
-.logo img{
+.logo img {
     height: 100px;
 }
 
-nav{
+nav {
     width: fit-content;
     height: auto;
 }
 
-nav ul{
+nav ul {
     margin: 0;
     padding: 0;
     list-style: none;
 }
 
-nav ul li{
+nav ul li {
     display: inline;
     border-left: solid 2px #333;
     padding-left: 12px;
@@ -43,11 +49,11 @@ nav ul li{
 
 }
 
-nav ul li:first-child{
+nav ul li:first-child {
     border-left: none;
 }
 
-nav ul li a{
+nav ul li a {
     text-emphasis: none;
     color: #333;
     font-size: 18px;
@@ -55,22 +61,22 @@ nav ul li a{
     font-size: sans-serif;
 }
 
-nav ul li a:hover{
-opacity: 0.7;
+nav ul li a:hover {
+    opacity: 0.7;
 }
 
-.banner{
+.banner {
     width: 100;
     height: 600px;
 }
 
-.banner img{
+.banner img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
-.servicos{
+.servicos {
     width: 100;
     height: auto;
     display: flex;
@@ -79,101 +85,200 @@ opacity: 0.7;
     padding: 0 30px;
 }
 
-.item-servicos{
+.item-servicos {
     width: 22%;
-   
+
 }
 
-.item-servicos img{
+.item-servicos img {
     width: 100%;
     height: 270px;
     object-fit: cover;
 }
-.item-servicos h2{
-   background-color: #000000; 
-   color: #ffffff;
-   margin: 0;
-   text-align: center;
-   font-family: sans-serif;
-   margin-top: -5px;
-   padding: 5px 0;
+
+.item-servicos h2 {
+    background-color: #000000;
+    color: #ffffff;
+    margin: 0;
+    text-align: center;
+    font-family: sans-serif;
+    margin-top: -5px;
+    padding: 5px 0;
 }
 
-.publicidade{
+.publicidade {
     width: 100%;
     background-color: #ddd;
 }
 
-.publicidade h1{
+.publicidade h1 {
     text-align: left;
     font-size: 40px;
-   text-transform: uppercase;
-   max-width: 600px;
-   margin-left: auto;
-   margin-right: auto;
+    text-transform: uppercase;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .cliente-texto h1 {
     text-align: left;
     font-size: 40px;
-   max-width: 600px;
-   margin-left: auto;
-   margin-right: auto;
-   font-size: 30px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 30px;
 }
 
-.cliente{
-    
+.cliente {
+
     display: flex;
     justify-content: sp h1
- 
-    
 }
 
-.cliente-img img{
+.cliente-img img {
     width: 100%;
 
 }
-.imagem-final{
+
+.imagem-final {
     width: 100%;
     height: auto;
     display: flex;
-  
-}
-.imagem{
-width: 50%;
 
 }
 
-.contato{
+.imagem {
     width: 50%;
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   justify-content: center;
-    background-color: rgb(191, 212, 3)
-    
+    height: auto;
+    display: flex;
+
 }
 
- .contato h1{
+.imagem img {
+    width: 100%;
+}
+
+.contato {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(191, 212, 3)
+}
+
+.contato h1 {
     font-size: 40px;
     font-weight: bold;
     margin-bottom: 20px;
 
 }
 
-.contato p{
+.contato p {
     font-size: 30px;
     font-weight: bold;
-}   
+}
 
-.fale-conosco{
+.fale-conosco {
     background-color: #333;
     color: #fff;
     width: 100%;
     height: auto;
     padding: 40px 0;
+    display: flex;
+}
+
+.formulario,
+.contato2 {
+    width: 50%;
+    height: auto;
+    padding: 0 40px;
+}
+
+.formulario input,
+.formulario textarea {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 5px 10px;
+    color: #555;
+    font-size: 1.2rem;
+}
+
+.formulario textarea {
+    resize: none;
+    height: 150px;
+}
+
+.formulario input[type=submit] {
+    width: fit-content;
+    background-color: #000000;
+    color: #ffffff;
+    padding: 5px 20px;
+    float: right;
+    cursor: pointer;
+}
+
+.formulario input[type=submit]:hover {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.linha {
+    margin: 15px 0;
+    font-size: 1, 5rem;
+}
+
+.linha i {
+    font-size: 1.5rem;
+}
+
+.icone i {
+    font-size: 3rem;
+}
+
+.mapa {
+    width: 100%;
+    height: auto;
+}
+
+.rodape {
+    width: 100%;
+    height: auto;
+    padding: 30px 0;
+    background-color: #ccc;
+    margin-top: -5px;
+}
+
+.rodape p {
+    text-align: center;
+    font-size: 0.8rem;
+}
+
+/*############################################ BANHO E TOSA #################################################################################*/
+
+.titulo {
+    width: 100%;
+    height: auto;
+}
+
+.titulo h1 {
+    width: 30%;
+    background-color: #000000;
+    padding: 10px 0 10px 50px;
+    color: #fff;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    border-radius: 0 20px 20px 0;
+}
+
+.texto-banho{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    padding: 20px 0;
+    margin: 50px;
+ 
 }
 
 
-    

@@ -284,7 +284,6 @@ nav ul li a:hover {
 .banho p {
     width: 100%;
     padding: 20px;
-    font-size: 1.1rem;
 }
 
 
@@ -323,79 +322,41 @@ nav ul li a:hover {
  margin-right: 5px;
 }
 
-.vacina {
-    width: 75%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 40px auto;
-    padding: 0;
-    gap: 32px;
-    flex-direction: row-reverse;
-}
-
-.vacina button {
-    width: 180px;
-    height: 45px;
-    font-size: 1.3rem;
-    background-color: #000;
-    color: #fff;
-    cursor: pointer;
-    padding: 10px 20px;
-    border-radius: 10px;
-    border: none;
-    transition: background 0.2s, color 0.2s;
-    margin-top: 24px;
-}
-
-.vacina button:hover {
-    background: #fff;
-    color: #000;
-}
-
 .img-vacina {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.img-vacina img {
-    max-width: 350px;
-    width: 100%;
+    width: 75%;
     height: auto;
-    border-radius: 10px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    margin: 0 auto;
+    padding: 20px 0;
 }
 
-.texto {
-    flex: 1;
-    padding: 0 10px;
-}
-
-.texto p {
-    text-align: left;
-    margin-top: 0;
-    font-size: 1.1rem;
-    line-height: 1.6;
+.texto p{
+   text-align: right;
+   margin-top: -10px;
 }
 
 .adestramento {
-    width: 100%;
-    margin: 0;
+    /* full-bleed: faz a seção esticar de ponta a ponta do viewport */
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
     padding: 0;
 }
 
 .adestramento img {
     width: 100%;
     display: block;
+    height: auto;
+    object-fit: cover;
     margin: 0;
-    padding: 0;
 }
 
 .adestramento-texto{
     width: 75%;
     margin: 40px auto;
-    padding: 20;
+    padding: 20px; /* unidade corrigida */
 }
 
 .adestramento-texto p{
@@ -404,8 +365,85 @@ nav ul li a:hover {
     font-size: 1.1rem;
     line-height: 1.6;
     margin: 24px 0;
-    
 }
+
+/* Ajuste: imagens lado a lado, um pouco menores, sem recorte agressivo */
+.adestramento-servico .servicos {
+    gap: 16px;
+    padding: 10px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.adestramento-servico .item-servicos {
+    flex: 0 0 18%;        /* largura base de cada item (aprox. 5 por linha) */
+    max-width: 200px;    /* evita que fiquem muito grandes */
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.adestramento-servico .item-servicos img {
+    width: 100%;
+    height: 147px;        /* mantém proporção original - evita recorte */
+    object-fit: cover; /* garante que a imagem caiba no box sem cortar */
+    object-position: center;
+    border-radius: 0;    /* cantos quadrados */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    display: block;
+    transition: transform 0.18s ease, box-shadow 0.18s ease;
+}
+
+.perguntas{
+    width: 75%;
+    margin: 50px  auto;
+}
+
+.perguntas h2{
+    font-family: 'Poppins', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    font-weight: 600;
+    font-size: 2rem;
+    letter-spacing: 0.4px;
+    color: #222;
+    text-align: center;
+    margin: 0 0 18px 0;
+}
+
+/* botão cinza para perguntas (estilo do accordion) */
+.perguntas .accordion-button {
+    background-color: #6b6b6b !important; /* cinza */
+    color: #ffffff !important;            /* texto branco */
+    border: none !important;
+    padding: 12px 16px !important;
+    border-radius: 6px !important;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    box-shadow: none !important;
+    transition: background-color 0.15s ease, transform 0.12s ease;
+}
+.perguntas .accordion-button:hover {
+    background-color: #5a5a5a !important;
+}
+.perguntas .accordion-button:focus {
+    outline: none !important;
+    box-shadow: 0 0 0 3px rgba(90,90,90,0.15) !important;
+}
+.perguntas .accordion-button.collapsed {
+    opacity: 0.98;
+}
+
+
+
+
+
+
+
+
+
+
 
 
 

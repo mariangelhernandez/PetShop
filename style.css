@@ -435,6 +435,18 @@ nav ul li a:hover {
     opacity: 0.98;
 }
 
+.texto-hotel, .fotos{
+    width: 80%;
+   height: auto;
+   margin: 40px auto;
+}
+
+.fotos img{
+    width: 23%;
+
+
+}
+
 
 
 
